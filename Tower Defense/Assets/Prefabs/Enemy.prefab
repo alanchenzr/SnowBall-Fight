@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3566093708570351235}
   - component: {fileID: 9109042233257543814}
+  - component: {fileID: 7811561300460645912}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -24,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3658742799388781705}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.019360544, y: -0.000000059604645, z: 0.24900639}
-  m_LocalScale: {x: 0.009979664, y: 0.5298009, z: 1.0000002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.0000002}
   m_Children: []
   m_Father: {fileID: 8306341729326218066}
   m_RootOrder: 0
@@ -79,6 +80,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7811561300460645912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658742799388781705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac916a79aba9bc94a8bdae3a019feec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4505401122034101676
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +101,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8306341729326218066}
+  - component: {fileID: 4210221284610027666}
+  - component: {fileID: 1781824849033761188}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -102,11 +117,42 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4505401122034101676}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -15.99, y: -0.46, z: 0}
-  m_LocalScale: {x: 100.20377, y: 1, z: 1.887502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1.887502}
   m_Children:
   - {fileID: 3566093708570351235}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4210221284610027666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505401122034101676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Distance_to_player","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"Amgle_to_player","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"Direction_to_player","value":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"},"$version":"A"},{"name":"Aim_rotation","value":{"$content":15.0,"$type":"System.Single"},"$version":"A"},{"name":"Range","value":{"$content":0.9,"$type":"System.Single"},"$version":"A"},{"name":"Maximent_range","value":{"$content":17,"$type":"System.Int32"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &1781824849033761188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505401122034101676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 2075aba5e40c751489cbb98e192ccaae, type: 2}

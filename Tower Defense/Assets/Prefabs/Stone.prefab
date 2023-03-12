@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4454550007910177237}
   - component: {fileID: 2865525047233322011}
+  - component: {fileID: 4470145624119101782}
   m_Layer: 0
   m_Name: Stones_0
   m_TagString: Untagged
@@ -79,6 +80,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4470145624119101782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5547736858906451030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aa26b6570a3c449a808b1f8cc6163e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sprite_Variations:
+  - {fileID: 21300000, guid: 93fad5cbae4f2ef45ac3eef18853a337, type: 3}
+  - {fileID: 21300002, guid: 93fad5cbae4f2ef45ac3eef18853a337, type: 3}
+  - {fileID: 21300004, guid: 93fad5cbae4f2ef45ac3eef18853a337, type: 3}
+  - {fileID: 21300006, guid: 93fad5cbae4f2ef45ac3eef18853a337, type: 3}
+  - {fileID: 21300008, guid: 93fad5cbae4f2ef45ac3eef18853a337, type: 3}
+  - {fileID: 21300010, guid: 93fad5cbae4f2ef45ac3eef18853a337, type: 3}
 --- !u!1 &5675331981148134068
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8623429541190554549}
+  - component: {fileID: 7494265630844067176}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -110,3 +131,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &7494265630844067176
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5675331981148134068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.2

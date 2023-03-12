@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5332289839134871117}
   - component: {fileID: 4147584794756430145}
+  - component: {fileID: 7538152308035705352}
+  - component: {fileID: 3364513596456009567}
   m_Layer: 0
   m_Name: Trees_0
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115889598860651960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.168589, y: -6.29934, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 312269325636955896}
@@ -79,6 +81,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7538152308035705352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115889598860651960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e0b9d0747c86748909ec0ed484a4da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3364513596456009567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115889598860651960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aa26b6570a3c449a808b1f8cc6163e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sprite_Variations:
+  - {fileID: 21300000, guid: ab622ba9683084047959edfce18e62e0, type: 3}
+  - {fileID: 21300002, guid: ab622ba9683084047959edfce18e62e0, type: 3}
+  - {fileID: 21300004, guid: ab622ba9683084047959edfce18e62e0, type: 3}
 --- !u!1 &1532553404191387824
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5195003150002318628}
   - component: {fileID: 203162721386841777}
+  - component: {fileID: 3258240633858204364}
   m_Layer: 0
   m_Name: Tree_shadows_0
   m_TagString: Untagged
@@ -104,7 +135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532553404191387824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.168589, y: -6.29934, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 312269325636955896}
@@ -158,6 +189,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3258240633858204364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532553404191387824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71aa26b6570a3c449a808b1f8cc6163e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sprite_Variations:
+  - {fileID: 21300000, guid: c6372462aab26164781c57ba4148fa14, type: 3}
+  - {fileID: 21300002, guid: c6372462aab26164781c57ba4148fa14, type: 3}
+  - {fileID: 21300004, guid: c6372462aab26164781c57ba4148fa14, type: 3}
 --- !u!1 &2067500871816260248
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312269325636955896}
+  - component: {fileID: 8718276820715129976}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -182,7 +230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067500871816260248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -22.168589, y: 6.29934, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5332289839134871117}
@@ -190,3 +238,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8718276820715129976
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067500871816260248}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3
